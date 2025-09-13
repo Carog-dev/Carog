@@ -35,7 +35,7 @@ export default function Header() {
         } else if (pathname === "/management/etc") {
             return '기타'
         }
-    };
+    }
 
     if (pathname === '/auth/login/kakao') {
         return null;
@@ -47,7 +47,7 @@ export default function Header() {
                 <Link to="/">
                     {/* <span className="text-lg font-bold">Carog</span> */}
                     <img
-                        src="/src/assets/logo.png"
+                        src="/icons/logo.png"
                         alt="logo"
                         className="w-auto h-8"
                     />

@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
     const navigate = useNavigate();
-    
+
     const handleLogin = async () => {
         const KAKAO_CLIENT_ID = "6c6081ab06b056a8a621ebd33bfcee55";
-        const REDIRECT_URI = import.meta.env.VITE_REDIRECT_URI;
+        const REDIRECT_URI = `${window.location.origin}/auth/login/kakao`;
         window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code`;
     };
 
